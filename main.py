@@ -1,16 +1,49 @@
+"""
+Supermarket Billing System
+This Python-based application provides a simple and efficient way to manage billing operations in a supermarket setting.
+
+jeninsutradhar@gmail.com
+"""
 import os
 import random
 import sys
+# Tkinter for Graphical User-Interface
 from tkinter import *
 from tkinter import messagebox
 
 
 class Bill_App:
+
     def _insert_products(self, widget, product_name, price):
+        """
+        This function is used to insert the product information into the text area.
+        It checks if the quantity of the product is not zero. If it's not zero, it
+        inserts the product name, quantity, and price into the text area.
+        
+        Args:
+            widget (Tkinter variable): The Tkinter variable representing the quantity of the product.
+            product_name (str): The name of the product.
+            price (str): The price of the product.
+            
+        Returns:
+            None
+        """
         if widget.get() != 0:
             self.txtarea.insert(END, f"{product_name}\t\t {widget.get()}\t{price}\n")
 
     def _insert_tax(self, widget, tax_name):
+        """
+        This function is used to insert the tax information into the text area.
+        It checks if the tax amount is not "0.0 Rs". If it's not "0.0 Rs", it
+        inserts the tax name and amount into the text area.
+        
+        Args:
+            widget (Tkinter variable): The Tkinter variable representing the tax amount.
+            tax_name (str): The name of the tax.
+            
+        Returns:
+            None
+        """
         if widget.get() != "0.0 Rs":
             self.txtarea.insert(END, f"{tax_name} : {widget.get()}\n")
 
