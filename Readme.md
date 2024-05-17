@@ -8,6 +8,9 @@ This Python-based application provides a simple and efficient way to manage bill
 - **Customer Details:** Capture customer details such as name and phone number to personalize the billing process.
 - **Clear and Exit Options:** Clear the fields to start a new billing session, and exit the application when done.
 
+![demo](https://github.com/JeninSutradhar/SupermarketBillingSystem/assets/111521642/6557ff6f-6d74-45d0-98a6-c1c79e063e02)
+
+
 ## Usage
 - **Installation:** Clone or download the source code from the repository.
 
