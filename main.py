@@ -106,7 +106,7 @@ class Bill_App:
         self.bill_no = StringVar()  # Bill no.
 
         # Other
-        x = random.randint(1000, 9999)
+        x = random.randint(1000, 9999) # Generate Random Number for Bill
         self.bill_no.set(str(x))
         self.phone = StringVar()  # Customer Phone Number
 
